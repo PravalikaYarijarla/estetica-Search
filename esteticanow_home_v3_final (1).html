@@ -1,0 +1,429 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+.pf{font-family:'Playfair Display',Georgia,serif}
+.dm{font-family:'DM Sans',sans-serif}
+.scroll-area{overflow-y:auto;max-height:756px;padding-bottom:88px;scrollbar-width:none}
+.scroll-area::-webkit-scrollbar{display:none}
+.cat-inactive:hover{border-color:#E8A870!important;transform:translateY(-1px)}
+.treat-card:hover{transform:translateY(-2px)}
+.clinic-card:hover{transform:translateY(-1px)}
+.cat-inactive,.treat-card,.clinic-card{transition:transform 0.2s ease}
+</style>
+
+<div style="display:flex;justify-content:center;align-items:flex-start;padding:2rem 1rem;min-height:960px;background:linear-gradient(160deg,#0D0500 0%,#1F0C00 50%,#0D0500 100%)">
+<div style="width:390px;background:#FAF6F2;border-radius:52px;overflow:hidden;border:10px solid #140800;box-shadow:0 0 0 1.5px #3A1800,0 50px 120px rgba(0,0,0,0.5),0 0 60px rgba(200,131,74,0.08),inset 0 1px 0 rgba(255,255,255,0.08);position:relative">
+
+<!-- Dynamic Island -->
+<div style="background:#140800;padding:16px 28px 12px;display:flex;justify-content:space-between;align-items:center">
+  <span class="dm" style="font-size:12px;font-weight:500;color:rgba(255,255,255,0.85)">9:41</span>
+  <div style="width:118px;height:32px;background:#000;border-radius:22px;display:flex;align-items:center;justify-content:center;gap:8px">
+    <div style="width:10px;height:10px;background:#1A1A1A;border-radius:50%"></div>
+    <div style="width:28px;height:10px;background:#1A1A1A;border-radius:6px"></div>
+  </div>
+  <div style="display:flex;gap:6px;align-items:center">
+    <svg width="15" height="11" viewBox="0 0 15 11"><rect x="0" y="4" width="3" height="7" rx="1" fill="rgba(255,255,255,0.85)"/><rect x="4" y="2.5" width="3" height="8.5" rx="1" fill="rgba(255,255,255,0.85)"/><rect x="8" y="0" width="3" height="11" rx="1" fill="rgba(255,255,255,0.85)"/><rect x="12" y="0" width="3" height="11" rx="1" fill="rgba(255,255,255,0.25)"/></svg>
+    <div style="display:flex;align-items:center"><div style="width:22px;height:11px;border:1.5px solid rgba(255,255,255,0.85);border-radius:3px;padding:1.5px;display:flex;align-items:center"><div style="width:14px;height:6px;background:rgba(255,255,255,0.85);border-radius:1px"></div></div><div style="width:2px;height:5px;background:rgba(255,255,255,0.85);border-radius:1px;margin-left:1px"></div></div>
+  </div>
+</div>
+
+<div class="scroll-area">
+
+<!-- ── HEADER ── -->
+<div style="padding:24px 24px 0">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:22px">
+
+    <!-- LOGO -->
+    <div style="display:flex;align-items:center;gap:10px">
+      <div style="width:42px;height:42px;border-radius:14px;background:linear-gradient(145deg,#D4904E 0%,#8B3A1A 100%);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(200,131,74,0.4)">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <ellipse cx="12" cy="10" rx="5.5" ry="7" fill="rgba(255,255,255,0.18)" stroke="white" stroke-width="1.3"/>
+          <path d="M8 16.5C8 18.7 9.8 20.5 12 20.5s4-1.8 4-4" stroke="white" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+          <circle cx="10" cy="9.5" r="1" fill="white"/>
+          <circle cx="14" cy="9.5" r="1" fill="white"/>
+          <path d="M10 12.5 Q12 14 14 12.5" stroke="white" stroke-width="1.1" fill="none" stroke-linecap="round"/>
+          <path d="M18.5 3.5l.4 1.2 1.2.4-1.2.4-.4 1.2-.4-1.2-1.2-.4 1.2-.4z" fill="rgba(255,255,255,0.9)"/>
+        </svg>
+      </div>
+      <div>
+        <div class="pf" style="font-size:18px;font-weight:700;color:#120600;letter-spacing:-0.4px;line-height:1.1">Estetica<span style="color:#C8834A">Now</span></div>
+        <div class="dm" style="font-size:9px;color:#B09070;letter-spacing:2px;text-transform:uppercase;margin-top:1px;font-weight:400">Beauty · Wellness</div>
+      </div>
+    </div>
+
+    <!-- Bell + Avatar -->
+    <div style="display:flex;gap:10px;align-items:center">
+      <div style="width:38px;height:38px;border-radius:12px;background:white;display:flex;align-items:center;justify-content:center;border:1px solid #EEE0D5;position:relative;box-shadow:0 2px 8px rgba(0,0,0,0.05)">
+        <svg width="17" height="17" viewBox="0 0 20 20" fill="none"><path d="M10 2a5 5 0 015 5c0 2.8.9 4.8 2 6H3c1.1-1.2 2-3.2 2-6a5 5 0 015-5z" stroke="#8B5A3A" stroke-width="1.5"/><path d="M8.5 16.5a1.5 1.5 0 003 0" stroke="#8B5A3A" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <div style="position:absolute;top:7px;right:7px;width:8px;height:8px;background:#E05A2A;border-radius:50%;border:2px solid #FAF6F2"></div>
+      </div>
+      <div style="width:38px;height:38px;border-radius:12px;background:linear-gradient(145deg,#E8B890,#C8834A);display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(200,131,74,0.3)">
+        <span class="pf" style="font-size:16px;font-weight:700;color:white">P</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── GREETING ── -->
+  <div style="margin-bottom:18px">
+    <div style="display:flex;align-items:center;gap:2px;margin-bottom:5px">
+      <span style="font-size:20px">👋</span>
+      <span class="pf" style="font-size:22px;font-weight:700;color:#120600;letter-spacing:-0.5px;margin-left:4px">Hi, Pravalika</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:6px">
+      <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M7 1a4.5 4.5 0 014.5 4.5c0 3-4.5 7.5-4.5 7.5S2.5 8.5 2.5 5.5A4.5 4.5 0 017 1z" stroke="#C8834A" stroke-width="1.3"/><circle cx="7" cy="5.5" r="1.5" fill="#C8834A"/></svg>
+      <p class="dm" style="font-size:13px;color:#A08060;font-weight:400">Discover treatments near you</p>
+    </div>
+  </div>
+
+  <!-- ── SEARCH BAR ── -->
+  <div style="display:flex;gap:10px;align-items:center;margin-bottom:4px">
+    <div style="flex:1;background:white;border-radius:16px;padding:0 16px;height:52px;display:flex;align-items:center;gap:10px;border:1.5px solid #EEE0D5;box-shadow:0 4px 18px rgba(200,131,74,0.07)">
+      <svg width="17" height="17" viewBox="0 0 20 20" fill="none"><circle cx="9" cy="9" r="6.5" stroke="#C8A888" stroke-width="1.8"/><path d="M14 14L18 18" stroke="#C8A888" stroke-width="2" stroke-linecap="round"/></svg>
+      <span class="dm" style="font-size:13px;color:#C0A898;flex:1">Search treatments, clinics…</span>
+    </div>
+    <!-- Filter floating outside -->
+    <div style="width:52px;height:52px;background:linear-gradient(145deg,#D4904E,#8B3A1A);border-radius:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 6px 18px rgba(200,131,74,0.35)">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M2 4h14M5 9h8M8 14h2" stroke="white" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </div>
+  </div>
+</div>
+
+<!-- ── TRUST STRIP ── -->
+<div style="margin:16px 24px 0">
+  <div style="background:linear-gradient(135deg,#FFF8F4,#FFF0E8);border-radius:14px;padding:11px 16px;display:flex;align-items:center;justify-content:space-between;border:1px solid #F0D8C8">
+    <div style="display:flex;align-items:center;gap:7px">
+      <div style="width:28px;height:28px;background:linear-gradient(135deg,#C8834A,#8B3A1A);border-radius:8px;display:flex;align-items:center;justify-content:center">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1l1.5 3.5L12 5l-2.5 2.5.5 3.5L7 9.5 4 11l.5-3.5L2 5l3.5-.5z" fill="white"/></svg>
+      </div>
+      <div>
+        <div class="dm" style="font-size:11px;font-weight:600;color:#3A1800">Verified Clinics Only</div>
+        <div class="dm" style="font-size:10px;color:#A07850">Safe · Certified · Trusted</div>
+      </div>
+    </div>
+    <div style="height:32px;width:1px;background:#E8C8B0"></div>
+    <div style="text-align:center">
+      <div class="pf" style="font-size:14px;font-weight:700;color:#C8834A">4.8 ★</div>
+      <div class="dm" style="font-size:9px;color:#A07850">10k+ users</div>
+    </div>
+    <div style="height:32px;width:1px;background:#E8C8B0"></div>
+    <div style="text-align:center">
+      <div class="pf" style="font-size:14px;font-weight:700;color:#C8834A">200+</div>
+      <div class="dm" style="font-size:9px;color:#A07850">Clinics</div>
+    </div>
+  </div>
+</div>
+
+<!-- ── CATEGORIES ── -->
+<div style="padding:20px 24px 0">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px">
+    <span class="pf" style="font-size:17px;font-weight:600;color:#120600">Categories</span>
+    <span class="dm" style="font-size:11px;color:#B09878;font-weight:400">View all</span>
+  </div>
+  <div style="display:flex;gap:10px;overflow-x:auto;padding-bottom:6px">
+
+    <!-- Active: Skin -->
+    <div style="flex-shrink:0;display:flex;flex-direction:column;align-items:center;gap:8px">
+      <div style="width:66px;height:66px;background:linear-gradient(145deg,#D4904E,#8B3A1A);border-radius:20px;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(200,131,74,0.4)">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><ellipse cx="14" cy="12" rx="6.5" ry="8.5" stroke="white" stroke-width="1.5" fill="rgba(255,255,255,0.15)"/><path d="M10 19.5c0 2.5 1.8 4.5 4 4.5s4-2 4-4.5" stroke="white" stroke-width="1.5" fill="none"/><circle cx="11.5" cy="11" r="1.1" fill="white"/><circle cx="16.5" cy="11" r="1.1" fill="white"/><path d="M11.5 15 Q14 17 16.5 15" stroke="white" stroke-width="1.1" fill="none" stroke-linecap="round"/></svg>
+      </div>
+      <span class="dm" style="font-size:11px;font-weight:600;color:#C8834A">Skin</span>
+    </div>
+
+    <!-- Hair -->
+    <div class="cat-inactive" style="flex-shrink:0;display:flex;flex-direction:column;align-items:center;gap:8px">
+      <div style="width:66px;height:66px;background:white;border-radius:20px;display:flex;align-items:center;justify-content:center;border:1.5px solid #EDE0D5;box-shadow:0 3px 10px rgba(0,0,0,0.06)">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M9 25V12C9 8.7 11.3 6 14 6s5 2.7 5 6v13" stroke="#C8834A" stroke-width="1.5" stroke-linecap="round"/><path d="M11.5 25V16" stroke="#C8834A" stroke-width="1.3" stroke-linecap="round"/><path d="M16.5 25V16" stroke="#C8834A" stroke-width="1.3" stroke-linecap="round"/></svg>
+      </div>
+      <span class="dm" style="font-size:11px;font-weight:500;color:#8B6A50">Hair</span>
+    </div>
+
+    <!-- Laser -->
+    <div class="cat-inactive" style="flex-shrink:0;display:flex;flex-direction:column;align-items:center;gap:8px">
+      <div style="width:66px;height:66px;background:white;border-radius:20px;display:flex;align-items:center;justify-content:center;border:1.5px solid #EDE0D5;box-shadow:0 3px 10px rgba(0,0,0,0.06)">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 4v20M4 14h20" stroke="#C8834A" stroke-width="1.5" stroke-linecap="round"/><circle cx="14" cy="14" r="4.5" stroke="#C8834A" stroke-width="1.5"/><path d="M7 7l3 3M18 18l3 3M7 21l3-3M18 10l3-3" stroke="#C8834A" stroke-width="1.2" stroke-linecap="round"/></svg>
+      </div>
+      <span class="dm" style="font-size:11px;font-weight:500;color:#8B6A50">Laser</span>
+    </div>
+
+    <!-- Acne -->
+    <div class="cat-inactive" style="flex-shrink:0;display:flex;flex-direction:column;align-items:center;gap:8px">
+      <div style="width:66px;height:66px;background:white;border-radius:20px;display:flex;align-items:center;justify-content:center;border:1.5px solid #EDE0D5;box-shadow:0 3px 10px rgba(0,0,0,0.06)">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="8.5" stroke="#C8834A" stroke-width="1.5"/><circle cx="10.5" cy="12.5" r="1.7" fill="#C8834A"/><circle cx="16.5" cy="10.5" r="1.1" fill="#C8834A"/><circle cx="14" cy="17" r="1.3" fill="#C8834A"/><circle cx="18.5" cy="15.5" r="1" fill="#C8834A"/></svg>
+      </div>
+      <span class="dm" style="font-size:11px;font-weight:500;color:#8B6A50">Acne</span>
+    </div>
+
+    <!-- Anti-aging -->
+    <div class="cat-inactive" style="flex-shrink:0;display:flex;flex-direction:column;align-items:center;gap:8px">
+      <div style="width:66px;height:66px;background:white;border-radius:20px;display:flex;align-items:center;justify-content:center;border:1.5px solid #EDE0D5;box-shadow:0 3px 10px rgba(0,0,0,0.06)">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M5 14C5 9 9 5 14 5s9 4 9 9" stroke="#C8834A" stroke-width="1.5" stroke-linecap="round"/><path d="M9 19.5c0 2.8 2.2 5 5 5s5-2.2 5-5" stroke="#C8834A" stroke-width="1.5" stroke-linecap="round"/><path d="M7.5 14h2.5M18 14h2.5" stroke="#C8834A" stroke-width="1.3" stroke-linecap="round"/><path d="M11 10l1 2.5M17 10l-1 2.5" stroke="#C8834A" stroke-width="1.1" stroke-linecap="round"/></svg>
+      </div>
+      <span class="dm" style="font-size:11px;font-weight:500;color:#8B6A50">Anti-aging</span>
+    </div>
+  </div>
+</div>
+
+<!-- ── AI BANNER ── -->
+<div style="margin:20px 24px 0">
+  <div style="border-radius:26px;overflow:hidden;position:relative;background:#120600;padding:22px 20px 22px 22px">
+    <!-- Glow behind face -->
+    <div style="position:absolute;right:10px;top:50%;transform:translateY(-50%);width:110px;height:110px;border-radius:50%;background:radial-gradient(circle,rgba(200,131,74,0.3) 0%,transparent 70%)"></div>
+    <!-- Decorative rings -->
+    <div style="position:absolute;top:-40px;right:-20px;width:130px;height:130px;border-radius:50%;border:1px solid rgba(200,131,74,0.12)"></div>
+    <div style="position:absolute;top:-20px;right:0px;width:90px;height:90px;border-radius:50%;border:1px solid rgba(200,131,74,0.1)"></div>
+
+    <div style="position:relative;display:flex;justify-content:space-between;align-items:center;gap:8px">
+      <div style="flex:1">
+        <!-- AI badge -->
+        <div style="display:inline-flex;align-items:center;gap:5px;background:rgba(200,131,74,0.2);border-radius:20px;padding:4px 10px;margin-bottom:10px;border:1px solid rgba(200,131,74,0.35)">
+          <div style="width:5px;height:5px;background:#E8A060;border-radius:50%"></div>
+          <span class="dm" style="font-size:9px;color:#E8A060;font-weight:600;letter-spacing:1px">AI POWERED</span>
+        </div>
+        <h3 class="pf" style="font-size:19px;font-weight:700;color:white;margin-bottom:5px;letter-spacing:-0.4px;line-height:1.2">AI Skin Analysis</h3>
+        <p class="dm" style="font-size:11px;color:#C0906A;margin-bottom:5px;line-height:1.5">Get personalized treatment suggestions</p>
+        <!-- Confidence microcopy -->
+        <p class="dm" style="font-size:10px;color:#906A48;margin-bottom:14px;font-style:italic">95% users found accurate recommendations</p>
+        <div style="display:flex;align-items:center;gap:10px">
+          <button style="background:linear-gradient(135deg,#D4904E,#C8834A);color:white;border:none;border-radius:12px;padding:10px 18px;font-size:12px;font-weight:600;font-family:'DM Sans',sans-serif;cursor:pointer;letter-spacing:0.2px;box-shadow:0 4px 16px rgba(200,131,74,0.5)">Analyze Now ✦</button>
+          <span class="dm" style="font-size:10px;color:#806040">Takes 30 secs</span>
+        </div>
+      </div>
+      <!-- Face scan illustration with glow -->
+      <div style="flex-shrink:0;width:92px;height:92px;position:relative">
+        <svg viewBox="0 0 92 92" width="92" height="92">
+          <defs>
+            <radialGradient id="faceGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#C8834A" stop-opacity="0.25"/>
+              <stop offset="100%" stop-color="#C8834A" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <circle cx="46" cy="46" r="40" fill="url(#faceGlow)"/>
+          <circle cx="46" cy="43" r="24" fill="rgba(200,131,74,0.1)" stroke="rgba(200,131,74,0.3)" stroke-width="0.8"/>
+          <ellipse cx="46" cy="41" rx="14" ry="18" fill="rgba(232,168,112,0.22)" stroke="#C8834A" stroke-width="1.2"/>
+          <ellipse cx="40" cy="38" rx="2.5" ry="3" fill="#E8A060"/>
+          <ellipse cx="52" cy="38" rx="2.5" ry="3" fill="#E8A060"/>
+          <path d="M41 45 Q46 49 51 45" stroke="#E8A060" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+          <!-- Scan corners -->
+          <path d="M10 10 L10 21 M10 10 L21 10" stroke="#C8834A" stroke-width="2" stroke-linecap="round" fill="none"/>
+          <path d="M82 10 L82 21 M82 10 L71 10" stroke="#C8834A" stroke-width="2" stroke-linecap="round" fill="none"/>
+          <path d="M10 82 L10 71 M10 82 L21 82" stroke="#C8834A" stroke-width="2" stroke-linecap="round" fill="none"/>
+          <path d="M82 82 L82 71 M82 82 L71 82" stroke="#C8834A" stroke-width="2" stroke-linecap="round" fill="none"/>
+          <!-- Scan line -->
+          <line x1="16" y1="46" x2="76" y2="46" stroke="#C8834A" stroke-width="1" stroke-dasharray="5,3" opacity="0.5"/>
+          <!-- Dots -->
+          <circle cx="46" cy="16" r="2" fill="#C8834A" opacity="0.6"/>
+          <circle cx="46" cy="76" r="2" fill="#C8834A" opacity="0.6"/>
+          <circle cx="16" cy="46" r="2" fill="#C8834A" opacity="0.6"/>
+          <circle cx="76" cy="46" r="2" fill="#C8834A" opacity="0.6"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── POPULAR TREATMENTS ── -->
+<div style="padding:20px 24px 0">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px">
+    <span class="pf" style="font-size:17px;font-weight:600;color:#120600">Popular Treatments</span>
+    <span class="dm" style="font-size:11px;color:#B09878;font-weight:400">See all</span>
+  </div>
+  <div style="display:flex;gap:13px;overflow-x:auto;padding-bottom:6px">
+
+    <!-- Card 1 -->
+    <div class="treat-card" style="flex-shrink:0;width:158px;background:white;border-radius:22px;overflow:hidden;border:1px solid #EEE0D5;box-shadow:0 6px 22px rgba(200,131,74,0.09)">
+      <div style="height:110px;background:linear-gradient(145deg,#F0C8A8,#D4904E);display:flex;align-items:center;justify-content:center;position:relative">
+        <svg width="52" height="52" viewBox="0 0 52 52" fill="none"><ellipse cx="26" cy="21" rx="13" ry="17" fill="rgba(255,255,255,0.25)" stroke="white" stroke-width="1.5"/><path d="M19 36c0 4.4 3.1 8 7 8s7-3.6 7-8" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="1.5"/><circle cx="22" cy="19.5" r="1.8" fill="white"/><circle cx="30" cy="19.5" r="1.8" fill="white"/><path d="M22 26 Q26 29 30 26" stroke="white" stroke-width="1.4" fill="none" stroke-linecap="round"/></svg>
+        <div style="position:absolute;top:10px;left:10px;background:rgba(255,255,255,0.28);backdrop-filter:blur(4px);border-radius:8px;padding:3px 8px"><span class="dm" style="font-size:9px;color:white;font-weight:700">🔥 TRENDING</span></div>
+        <div style="position:absolute;top:10px;right:10px;width:28px;height:28px;background:rgba(255,255,255,0.2);border-radius:8px;display:flex;align-items:center;justify-content:center">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 11S2 8 2 4.5a2.5 2.5 0 015-0.3 2.5 2.5 0 015 .3C12 8 7 11 7 11z" stroke="white" stroke-width="1.3"/></svg>
+        </div>
+      </div>
+      <div style="padding:12px">
+        <p class="pf" style="font-size:13px;font-weight:600;color:#120600;margin-bottom:2px">HydraFacial</p>
+        <p class="dm" style="font-size:10px;color:#A08060;margin-bottom:8px">Deep cleanse + hydration</p>
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
+          <span class="dm" style="font-size:12px;color:#C8834A;font-weight:600">₹2,000+</span>
+          <div style="display:flex;align-items:center;gap:2px">
+            <span style="color:#F5A623;font-size:11px">★</span>
+            <span class="dm" style="font-size:10px;color:#8B6A50;font-weight:500">4.8</span>
+            <span class="dm" style="font-size:9px;color:#B09878">(243)</span>
+          </div>
+        </div>
+        <div style="background:linear-gradient(135deg,#FAF0E8,#F5E0CC);border-radius:10px;padding:7px 10px;display:flex;align-items:center;justify-content:space-between">
+          <span class="dm" style="font-size:10px;color:#8B5A30;font-weight:500">Book Now</span>
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="#C8834A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="treat-card" style="flex-shrink:0;width:158px;background:white;border-radius:22px;overflow:hidden;border:1px solid #EEE0D5;box-shadow:0 6px 22px rgba(200,131,74,0.09)">
+      <div style="height:110px;background:linear-gradient(145deg,#C8D8F8,#7090D8);display:flex;align-items:center;justify-content:center;position:relative">
+        <svg width="52" height="52" viewBox="0 0 52 52" fill="none"><circle cx="26" cy="26" r="15" stroke="white" stroke-width="1.5" fill="rgba(255,255,255,0.18)"/><path d="M19 21 Q26 17 33 21" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round"/><path d="M17 29h18" stroke="white" stroke-width="1.5" stroke-linecap="round"/><path d="M26 35v-6" stroke="white" stroke-width="1.3" stroke-linecap="round"/><circle cx="26" cy="23" r="2.2" fill="white"/></svg>
+        <div style="position:absolute;top:10px;left:10px;background:rgba(255,255,255,0.28);border-radius:8px;padding:3px 8px"><span class="dm" style="font-size:9px;color:white;font-weight:700">⭐ POPULAR</span></div>
+        <div style="position:absolute;top:10px;right:10px;width:28px;height:28px;background:rgba(255,255,255,0.2);border-radius:8px;display:flex;align-items:center;justify-content:center">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 11S2 8 2 4.5a2.5 2.5 0 015-0.3 2.5 2.5 0 015 .3C12 8 7 11 7 11z" stroke="white" stroke-width="1.3"/></svg>
+        </div>
+      </div>
+      <div style="padding:12px">
+        <p class="pf" style="font-size:13px;font-weight:600;color:#120600;margin-bottom:2px">Laser Hair Removal</p>
+        <p class="dm" style="font-size:10px;color:#A08060;margin-bottom:8px">Permanent smooth skin</p>
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
+          <span class="dm" style="font-size:12px;color:#C8834A;font-weight:600">₹3,500+</span>
+          <div style="display:flex;align-items:center;gap:2px">
+            <span style="color:#F5A623;font-size:11px">★</span>
+            <span class="dm" style="font-size:10px;color:#8B6A50;font-weight:500">4.6</span>
+            <span class="dm" style="font-size:9px;color:#B09878">(189)</span>
+          </div>
+        </div>
+        <div style="background:linear-gradient(135deg,#FAF0E8,#F5E0CC);border-radius:10px;padding:7px 10px;display:flex;align-items:center;justify-content:space-between">
+          <span class="dm" style="font-size:10px;color:#8B5A30;font-weight:500">Book Now</span>
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="#C8834A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="treat-card" style="flex-shrink:0;width:158px;background:white;border-radius:22px;overflow:hidden;border:1px solid #EEE0D5;box-shadow:0 6px 22px rgba(200,131,74,0.09)">
+      <div style="height:110px;background:linear-gradient(145deg,#C8E8C8,#5AAA6A);display:flex;align-items:center;justify-content:center;position:relative">
+        <svg width="52" height="52" viewBox="0 0 52 52" fill="none"><rect x="17" y="12" width="18" height="28" rx="8" fill="rgba(255,255,255,0.2)" stroke="white" stroke-width="1.5"/><path d="M21 25h10M21 30h7" stroke="white" stroke-width="1.5" stroke-linecap="round"/><path d="M26 12V8M22 13l-2-3M30 13l2-3" stroke="white" stroke-width="1.3" stroke-linecap="round"/></svg>
+        <div style="position:absolute;top:10px;left:10px;background:rgba(255,255,255,0.28);border-radius:8px;padding:3px 8px"><span class="dm" style="font-size:9px;color:white;font-weight:700">✨ NEW</span></div>
+        <div style="position:absolute;top:10px;right:10px;width:28px;height:28px;background:rgba(255,255,255,0.2);border-radius:8px;display:flex;align-items:center;justify-content:center">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 11S2 8 2 4.5a2.5 2.5 0 015-0.3 2.5 2.5 0 015 .3C12 8 7 11 7 11z" stroke="white" stroke-width="1.3"/></svg>
+        </div>
+      </div>
+      <div style="padding:12px">
+        <p class="pf" style="font-size:13px;font-weight:600;color:#120600;margin-bottom:2px">Anti-Acne Peel</p>
+        <p class="dm" style="font-size:10px;color:#A08060;margin-bottom:8px">Clear · Calm · Revive</p>
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
+          <span class="dm" style="font-size:12px;color:#C8834A;font-weight:600">₹1,500+</span>
+          <div style="display:flex;align-items:center;gap:2px">
+            <span style="color:#F5A623;font-size:11px">★</span>
+            <span class="dm" style="font-size:10px;color:#8B6A50;font-weight:500">4.5</span>
+            <span class="dm" style="font-size:9px;color:#B09878">(312)</span>
+          </div>
+        </div>
+        <div style="background:linear-gradient(135deg,#FAF0E8,#F5E0CC);border-radius:10px;padding:7px 10px;display:flex;align-items:center;justify-content:space-between">
+          <span class="dm" style="font-size:10px;color:#8B5A30;font-weight:500">Book Now</span>
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="#C8834A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── QUICK ACTIONS ── -->
+<div style="padding:20px 24px 0">
+  <div style="display:flex;gap:10px">
+    <div style="flex:1;background:white;border-radius:18px;padding:14px 10px;text-align:center;border:1px solid #EEE0D5;box-shadow:0 3px 12px rgba(200,131,74,0.06)">
+      <div style="width:36px;height:36px;background:#FDF0E6;border-radius:12px;display:flex;align-items:center;justify-content:center;margin:0 auto 8px">
+        <svg width="17" height="17" viewBox="0 0 17 17" fill="none"><path d="M2.5 8.5a6 6 0 1112 0" stroke="#C8834A" stroke-width="1.6" stroke-linecap="round"/><path d="M2.5 8.5l-2 2M2.5 8.5l2 2" stroke="#C8834A" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </div>
+      <p class="dm" style="font-size:10px;color:#5A3A20;font-weight:600">Book Again</p>
+    </div>
+    <div style="flex:1;background:white;border-radius:18px;padding:14px 10px;text-align:center;border:1px solid #EEE0D5;box-shadow:0 3px 12px rgba(200,131,74,0.06)">
+      <div style="width:36px;height:36px;background:#FDF0E6;border-radius:12px;display:flex;align-items:center;justify-content:center;margin:0 auto 8px">
+        <svg width="17" height="17" viewBox="0 0 17 17" fill="none"><path d="M8.5 14S2 10.5 2 6a3.5 3.5 0 017-0.4 3.5 3.5 0 017 .4c0 4.5-6.5 8-6.5 8z" stroke="#C8834A" stroke-width="1.6"/></svg>
+      </div>
+      <p class="dm" style="font-size:10px;color:#5A3A20;font-weight:600">Saved</p>
+    </div>
+    <div style="flex:1;background:white;border-radius:18px;padding:14px 10px;text-align:center;border:1px solid #EEE0D5;box-shadow:0 3px 12px rgba(200,131,74,0.06)">
+      <div style="width:36px;height:36px;background:#FDF0E6;border-radius:12px;display:flex;align-items:center;justify-content:center;margin:0 auto 8px">
+        <svg width="17" height="17" viewBox="0 0 17 17" fill="none"><circle cx="8.5" cy="8.5" r="6" stroke="#C8834A" stroke-width="1.6"/><path d="M8.5 5.5v3.5l2.5 2" stroke="#C8834A" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </div>
+      <p class="dm" style="font-size:10px;color:#5A3A20;font-weight:600">Recent</p>
+    </div>
+  </div>
+</div>
+
+<!-- ── TOP CLINICS ── -->
+<div style="padding:20px 24px 0">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px">
+    <span class="pf" style="font-size:17px;font-weight:600;color:#120600">Top Clinics Near You</span>
+    <span class="dm" style="font-size:11px;color:#B09878;font-weight:400">See all</span>
+  </div>
+
+  <div class="clinic-card" style="background:white;border-radius:20px;padding:15px;border:1px solid #EEE0D5;box-shadow:0 6px 22px rgba(200,131,74,0.08);margin-bottom:12px;display:flex;gap:13px;align-items:center">
+    <div style="width:58px;height:58px;background:linear-gradient(145deg,#F0C8A8,#C8834A);border-radius:16px;flex-shrink:0;display:flex;align-items:center;justify-content:center">
+      <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><path d="M4 24V11l9-8 9 8v13" stroke="white" stroke-width="1.5"/><rect x="10" y="16" width="6" height="8" rx="2" fill="rgba(255,255,255,0.35)"/><rect x="10" y="9" width="2.5" height="2.5" rx="0.8" stroke="white" stroke-width="1.1"/><rect x="13.5" y="9" width="2.5" height="2.5" rx="0.8" stroke="white" stroke-width="1.1"/></svg>
+    </div>
+    <div style="flex:1">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:3px">
+        <p class="pf" style="font-size:14px;font-weight:600;color:#120600">Glow Aesthetics</p>
+        <div style="background:#E6F5EB;border-radius:8px;padding:3px 7px;border:1px solid #C0E0C8"><span class="dm" style="font-size:9px;color:#1A7A30;font-weight:700">✓ VERIFIED</span></div>
+      </div>
+      <p class="dm" style="font-size:11px;color:#A08060;margin-bottom:6px">1.2 km · Open now · Skin & Hair</p>
+      <div style="display:flex;align-items:center;justify-content:space-between">
+        <div style="display:flex;align-items:center;gap:3px">
+          <span style="color:#F5A623;font-size:12px">★★★★★</span>
+          <span class="dm" style="font-size:10px;color:#8B6A50">4.9 (527)</span>
+        </div>
+        <span class="dm" style="font-size:10px;color:#C8834A;font-weight:500">View →</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="clinic-card" style="background:white;border-radius:20px;padding:15px;border:1px solid #EEE0D5;box-shadow:0 6px 22px rgba(200,131,74,0.08);display:flex;gap:13px;align-items:center">
+    <div style="width:58px;height:58px;background:linear-gradient(145deg,#C8D8F8,#6088C8);border-radius:16px;flex-shrink:0;display:flex;align-items:center;justify-content:center">
+      <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><rect x="4" y="9" width="18" height="14" rx="3" stroke="white" stroke-width="1.5" fill="rgba(255,255,255,0.15)"/><path d="M9.5 9V7a3.5 3.5 0 017 0v2" stroke="white" stroke-width="1.5"/><path d="M13 14v3M11.5 15.5h3" stroke="white" stroke-width="1.4" stroke-linecap="round"/></svg>
+    </div>
+    <div style="flex:1">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:3px">
+        <p class="pf" style="font-size:14px;font-weight:600;color:#120600">Radiance Studio</p>
+        <div style="background:#E6F5EB;border-radius:8px;padding:3px 7px;border:1px solid #C0E0C8"><span class="dm" style="font-size:9px;color:#1A7A30;font-weight:700">✓ VERIFIED</span></div>
+      </div>
+      <p class="dm" style="font-size:11px;color:#A08060;margin-bottom:6px">2.8 km · Open now · Laser & Acne</p>
+      <div style="display:flex;align-items:center;justify-content:space-between">
+        <div style="display:flex;align-items:center;gap:3px">
+          <span style="color:#F5A623;font-size:12px">★★★★</span><span style="color:#DDD0C0;font-size:12px">★</span>
+          <span class="dm" style="font-size:10px;color:#8B6A50">4.7 (381)</span>
+        </div>
+        <span class="dm" style="font-size:10px;color:#C8834A;font-weight:500">View →</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><!-- end scroll -->
+
+<!-- ── BOTTOM NAVIGATION ── -->
+<div style="background:white;border-top:1px solid #EEE0D5;padding:12px 8px 24px;display:flex;justify-content:space-around;align-items:center">
+  <!-- Home - active pill -->
+  <div style="display:flex;flex-direction:column;align-items:center;gap:4px">
+    <div style="padding:6px 16px;background:linear-gradient(135deg,#FDE8D5,#F5D0B5);border-radius:14px;display:flex;align-items:center;gap:5px;border:1px solid rgba(200,131,74,0.2)">
+      <svg width="16" height="16" viewBox="0 0 18 18" fill="none"><path d="M2 8.5L9 2l7 6.5V15.5a1 1 0 01-1 1H3a1 1 0 01-1-1V8.5z" fill="#C8834A"/></svg>
+      <span class="dm" style="font-size:11px;color:#C8834A;font-weight:700">Home</span>
+    </div>
+  </div>
+  <!-- Search -->
+  <div style="display:flex;flex-direction:column;align-items:center;gap:4px">
+    <div style="width:40px;height:36px;display:flex;align-items:center;justify-content:center">
+      <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><circle cx="9" cy="9" r="6" stroke="#C0A898" stroke-width="1.8"/><path d="M14 14l4 4" stroke="#C0A898" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </div>
+    <span class="dm" style="font-size:10px;color:#C0A898">Search</span>
+  </div>
+  <!-- Bookings -->
+  <div style="display:flex;flex-direction:column;align-items:center;gap:4px">
+    <div style="width:40px;height:36px;display:flex;align-items:center;justify-content:center">
+      <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><rect x="3" y="4" width="14" height="14" rx="2" stroke="#C0A898" stroke-width="1.8"/><path d="M7 2v4M13 2v4M3 9h14" stroke="#C0A898" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </div>
+    <span class="dm" style="font-size:10px;color:#C0A898">Bookings</span>
+  </div>
+  <!-- Wishlist -->
+  <div style="display:flex;flex-direction:column;align-items:center;gap:4px">
+    <div style="width:40px;height:36px;display:flex;align-items:center;justify-content:center">
+      <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M10 16.5S3 12 3 7a4 4 0 017-2.6A4 4 0 0117 7c0 5-7 9.5-7 9.5z" stroke="#C0A898" stroke-width="1.8"/></svg>
+    </div>
+    <span class="dm" style="font-size:10px;color:#C0A898">Wishlist</span>
+  </div>
+  <!-- Profile -->
+  <div style="display:flex;flex-direction:column;align-items:center;gap:4px">
+    <div style="width:40px;height:36px;display:flex;align-items:center;justify-content:center">
+      <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="7" r="3.5" stroke="#C0A898" stroke-width="1.8"/><path d="M4 18c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="#C0A898" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </div>
+    <span class="dm" style="font-size:10px;color:#C0A898">Profile</span>
+  </div>
+</div>
+
+</div>
+</div>
